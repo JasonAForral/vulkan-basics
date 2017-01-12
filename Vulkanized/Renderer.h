@@ -15,7 +15,7 @@ private:
 	void _InitDevice();
 	void _DeInitDevice();
 
-	auto err = vkCreateInstance _instance = nullptr;
+	VkInstance _instance = nullptr;
 
 };
 
