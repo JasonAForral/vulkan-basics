@@ -15,7 +15,11 @@ private:
 	void _InitDevice();
 	void _DeInitDevice();
 
-	VkInstance _instance = nullptr;
+	VkInstance					_instance	= nullptr;
+	VkPhysicalDevice			_gpu		= nullptr;
+	VkDevice					_device		= nullptr;
+	VkPhysicalDeviceProperties	_gpu_properties = {};
 
+	uint32_t			_graphics_family_index = 0;
 };
 
